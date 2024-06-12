@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Cumpleaños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+        .chat-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        df-messenger {
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .chat-container {
+                width: 100%;
+                box-shadow: none;
+                padding: 0;
+            }
+            df-messenger {
+                --df-messenger-chat-background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Bienvenido al Chatbot de Cumpleaños</h1>
+        <!-- Pegue el código proporcionado por Dialogflow aquí --><iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/27954a61-be5d-44bf-a9cf-1fc89c50fe21"></iframe>
+        <!-- Ejemplo:
+        <df-messenger
+            intent="WELCOME"
+            chat-title="CumpleChat"
+            agent-id="your-agent-id"
+            language-code="es">
+        </df-messenger>
+        -->
+    </div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</body>
+</html>
